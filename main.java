@@ -9,6 +9,8 @@ public class main {
 
 		
 			Menu m = new Menu();
+	
+			System.out.println("TEST21212121E GITHUB");
 	}
 
 }
