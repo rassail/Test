@@ -42,12 +42,12 @@ public class Modele {
 			ResultSet rs = null;
 			
 			try {
-				//Statement st = dbconnect().createStatement();
-				//String sql = ("SELECT count(numero) FROM contact");
-				// rs = st.executeQuery (sql) ; 
-				PreparedStatement statement = dbconnect().prepareStatement("SELECT * FROM contact where nom = ?");
-				statement.setString(1, nom);
-				ResultSet res = statement.executeQuery();
+				Statement st = dbconnect().createStatement();
+				String sql = ("SELECT count(numero) FROM contact");
+				 rs = st.executeQuery (sql) ; 
+				//PreparedStatement statement = dbconnect().prepareStatement("SELECT * FROM contact where nom = ?");
+				//statement.setString(1, nom);
+				//ResultSet res = statement.executeQuery();
 
 				} catch (SQLException e) {
 				System.out.println(e);
